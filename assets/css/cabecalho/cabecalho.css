@@ -11,11 +11,17 @@
     left: 50%;
     position: absolute;
     top: 25%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -25%);
 }
 
 .lista-multipagina__item {
     border: 1px solid #FFFFFF;
     border-radius: 50%;
-    padding: 8px 11px;
+    padding: 8px 12px;
+}
+
+.lista-multipagina__item--ativo {
+    background-color: var(--cor-fundo-multipaginas-cabecalho);
+    border: none;
+    color: #000000;
 }
