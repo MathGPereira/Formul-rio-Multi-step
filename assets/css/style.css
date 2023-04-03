@@ -18,6 +18,9 @@
         --fonte-peso-titulo-principal: 700;
         --fonte-peso-labels-formulario: 500;
     /* Variáveis do principal */
+    /* Variáveis do rodapé */
+        --cor-fundo-padrao-rodape: #FAFBFF;
+    /* Variáveis do rodapé */
 }
 
 * {

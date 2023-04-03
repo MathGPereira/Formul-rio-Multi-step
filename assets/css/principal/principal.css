@@ -1,7 +1,7 @@
 .principal {
     background-color: var(--cor-fundo-padrao-principal);
     color: var(--cor-fonte-padrao-principal);
-    height: calc(100vh - 172px);
+    height: calc(100vh - 172px - 4.1em);
     position: relative;
 }
 
