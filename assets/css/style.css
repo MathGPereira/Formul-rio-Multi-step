@@ -1,0 +1,23 @@
+/* Variáveis globais dos arquivos CSS */
+:root {
+    /* Variáveis do body */
+        --fonte-familia-padrao: 'Ubuntu', sans-serif;
+        --fonte-tamanho-padrao: 16px;
+        --fonte-peso-padrao: 400;
+    /* Variáveis do body */
+    /* Variáveis do cabeçalho */
+        --fonte-peso-cabecalho: 500;
+        --cor-fonte-cabecalho: #FFFFFF;
+    /* Variáveis do cabeçalho */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fonte-familia-padrao);
+    font-size: var(--fonte-tamanho-padrao);
+    font-weight: var(--fonte-peso-padrao);
+    height: 100vh;
+}

@@ -1,0 +1,21 @@
+.cabecalho {
+    box-sizing: border-box;
+    color: var(--cor-fonte-cabecalho);
+    font-weight: var(--fonte-peso-cabecalho);
+    position: relative;
+}
+
+.cabecalho__lista-multipagina {
+    display: flex;
+    gap: 20px;
+    left: 50%;
+    position: absolute;
+    top: 25%;
+    transform: translate(-50%, -50%);
+}
+
+.lista-multipagina__item {
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    padding: 8px 11px;
+}
