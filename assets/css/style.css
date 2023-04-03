@@ -10,6 +10,14 @@
         --cor-fonte-cabecalho: #FFFFFF;
         --cor-fundo-multipaginas-cabecalho: #BFE2FD ;
     /* Variáveis do cabeçalho */
+    /* Variáveis do principal */
+        --cor-fundo-padrao-principal: #F0F6FF;
+        --cor-fundo-formulario-principal: #FAFBFF;
+        --cor-fonte-padrao-principal: #02295A;
+        --cor-fonte-descricao-principal: #9699AB;
+        --fonte-peso-titulo-principal: 700;
+        --fonte-peso-labels-formulario: 500;
+    /* Variáveis do principal */
 }
 
 * {

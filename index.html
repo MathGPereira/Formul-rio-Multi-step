@@ -8,10 +8,11 @@
 		<meta http-equiv="content-language" content="pt-br"/>
 		<meta name="keywords" content="formulario, nome, numero, avancado, pro">
 		<meta name="rating" content="mature">
-		<title>Formulário multipáginas</title>
+		<title>Informações Pessoais</title>
 		<link type="text/css" rel="stylesheet" href="./assets/css/reset.css">
 		<link type="text/css" rel="stylesheet" href="./assets/css/style.css">
-		<link  type="text/css" rel="stylesheet" href="./assets/css/cabecalho/cabecalho.css">
+		<link type="text/css" rel="stylesheet" href="./assets/css/cabecalho/cabecalho.css">
+		<link type="text/css" rel="stylesheet" href="./assets/css/principal/principal.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
@@ -47,6 +48,25 @@
 				<li class="lista-multipagina__item">4</li>
 			</ul>
 		</header>
+		<main class="principal">
+			<form action="" method="POST" autocomplete="on" class="principal__formulario">
+				<fieldset class="formulario__conteudo">
+					<legend class="conteudo__titulo">Informações pessoais</legend>
+					<P class="conteudo__descricao">
+						Por favor, forneça seu nome, endereço de e-mail e número de telefone.
+					</P>
+					<label for="nome" class="conteudo__rotulo">Name</label>
+					<input type="text" name="nome" id="nome" class="conteudo__entrada" required placeholder="e.x.: Pedro Marins" maxlength="30" minlength="7">
+					<label for="email" class="conteudo__rotulo">Endereço de E-mail</label>
+					<input type="email" name="email" id="email" class="conteudo__entrada" required placeholder="e.x.: email@dominio.com" pattern="^[a-z0-9.A-Z]+@[a-z0-9]+\.[a-z]+\.([a-z]+)?$/i">
+					<label for="numero" class="conteudo__rotulo">Número de Telefone</label>
+					<input type="text" name="numero" id="numero" class="conteudo__entrada" maxlength="11" minlength="11" required placeholder="e.x.: 16999999999" pattern="d{11}">
+				</fieldset>
+			</form>
+		</main>
+		<footer class="rodape">
+			
+		</footer>
 	</body>
 </html>
 
@@ -61,10 +81,6 @@ Add-ons
 
 Step 4
 Summary
-
-
-Personal info
-Please provide your name, email address, and phone number.
 
 Name
 e.g. Stephen King
