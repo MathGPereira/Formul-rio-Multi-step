@@ -8,7 +8,7 @@
 		<meta http-equiv="content-language" content="pt-br"/>
 		<meta name="keywords" content="formulario, nome, numero, avancado, pro">
 		<meta name="rating" content="mature">
-		<title>Informações Pessoais</title>
+		<title>Formulário multipágina</title>
 		<link type="text/css" rel="stylesheet" href="./assets/css/reset.css">
 		<link type="text/css" rel="stylesheet" href="./assets/css/style.css">
 		<link type="text/css" rel="stylesheet" href="./assets/css/cabecalho/cabecalho.css">
@@ -50,7 +50,7 @@
 			</ul>
 		</header>
 		<main class="principal">
-			<form action="" method="POST" autocomplete="on" class="principal__formulario">
+			<form action="#" method="POST" autocomplete="on" id="formulario" class="principal__formulario">
 				<fieldset class="formulario__conteudo">
 					<legend class="conteudo__titulo">Informações pessoais</legend>
 					<P class="conteudo__descricao">
@@ -59,14 +59,14 @@
 					<label for="nome" class="conteudo__rotulo">Name</label>
 					<input type="text" name="nome" id="nome" class="conteudo__entrada" required placeholder="e.x.: Pedro Marins" maxlength="30" minlength="7">
 					<label for="email" class="conteudo__rotulo">Endereço de E-mail</label>
-					<input type="email" name="email" id="email" class="conteudo__entrada" required placeholder="e.x.: email@dominio.com" pattern="^[a-z0-9.A-Z]+@[a-z0-9]+\.[a-z]+\.([a-z]+)?$/i">
+					<input type="email" name="email" id="email" class="conteudo__entrada" required placeholder="e.x.: email@dominio.com" >
 					<label for="numero" class="conteudo__rotulo">Número de Telefone</label>
-					<input type="text" name="numero" id="numero" class="conteudo__entrada" maxlength="11" minlength="11" required placeholder="e.x.: 16999999999" pattern="d{11}">
+					<input type="text" name="numero" id="numero" class="conteudo__entrada" maxlength="11" minlength="11" required placeholder="e.x.: (xx)xxxxx-xxxx">
 				</fieldset>
 			</form>
 		</main>
 		<footer class="rodape">
-			<button type="submit" name="proximo" class="rodape__botao">Próximo Passo</button>
+			<button type="submit" form="formulario" name="proximo" class="rodape__botao">Próximo Passo</button>
 		</footer>
 	</body>
 </html>

@@ -26,6 +26,7 @@
 
 .conteudo__descricao {
     color: var(--cor-fonte-descricao-principal);
+    font-size: 14px;
     margin: 1em 0;
 }
 
@@ -38,9 +39,15 @@
 
 .conteudo__entrada {
     border: 1.5px solid #D6D9E6;
+    border-radius: 5px;
     display: inline-block;
     padding: 8px;
     width: 100%;
+}
+
+.conteudo__entrada:focus,
+.conteudo__entrada:active {
+    outline-color: #022a5abb;
 }
 
 .conteudo__entrada:not(.conteudo__entrada:last-child) {
