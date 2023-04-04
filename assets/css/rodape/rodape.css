@@ -1,26 +1,40 @@
 .rodape {
     background-color: var(--cor-fundo-padrao-rodape);
     box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
     padding: .9em;
-    text-align: right;
 }
 
-.rodape__botao {
+.rodape__botao-voltar {
+    background-color: transparent;
+    border: none;
+    color: #02295A;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.inativo {
+    display: none;
+}
+
+.rodape__botao-proximo {
     background-color: #02295A;
     border: none;
     border-radius: 3px;
     box-sizing: border-box;
     color: #FFFFFF;
     padding: .7em;
+    text-align: right;
     text-decoration: none;
     transition: all .4s linear;
 }
 
-.rodape__botao:hover {
+.rodape__botao-proximo:hover {
     background-color: #011e41;
     cursor: pointer;
 }
 
-.rodape__botao:active {
+.rodape__botao-proximo:active {
     background-color: #011e41bd;
 }

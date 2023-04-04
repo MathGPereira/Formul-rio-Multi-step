@@ -32,11 +32,11 @@
 					<use xlink:href="#a" fill="#483EFF"/>
 					<g mask="url(#b)">
 						<g transform="translate(-151.029 -133.957)">
-							<path fill="#6259FF" d="M79.546 349.634c54.547 128.646 292.524 204.132 354.626 99.852 62.102-104.28-95.035-123.204-150.583-230.963-55.547-107.759-98.711-175.015-178.973-150.466C24.354 92.607 25 220.987 79.546 349.634Z">
+							<path fill="#6259FF" d="M79.546 349.634c54.547 128.646 292.524 204.132 354.626 99.852 62.102-104.28-95.035-123.204-150.583-230.963-55.547-107.759-98.711-175.015-178.973-150.466C24.354 92.607 25 220.987 79.546 349.634Z"/>
 							<ellipse cx="129.864" cy="258.711" fill="#FFAF7E" rx="96.329" ry="96.373"/>
-							<path fill="#F9818E" d="M464.88 433.146c87.31-40.69 133.585-206.525 60.253-246.82-73.333-40.293-82.587 68.465-155.485 109.343-72.898 40.877-118.192 72.245-99.348 126.973 18.845 54.728 107.27 51.194 194.58 10.504Z">
+							<path fill="#F9818E" d="M464.88 433.146c87.31-40.69 133.585-206.525 60.253-246.82-73.333-40.293-82.587 68.465-155.485 109.343-72.898 40.877-118.192 72.245-99.348 126.973 18.845 54.728 107.27 51.194 194.58 10.504Z"/>
 							<g stroke="#FFF" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="5">
-								<path d="m367.336 243.125 15.263-15.549M430.872 251.016l-17.995-15.112M399.36 271.751l-9.94 21.293">
+								<path d="m367.336 243.125 15.263-15.549M430.872 251.016l-17.995-15.112M399.36 271.751l-9.94 21.293"/>
 							</g>
 						</g>
 					</g>
@@ -50,24 +50,40 @@
 			</ul>
 		</header>
 		<main class="principal">
+			<!-- <form action="#" method="POST" autocomplete="on" id="formulario" class="principal__formulario">
+                <fieldset class="formulario__conteudo">
+                    <legend class="conteudo__titulo">Informações pessoais</legend>
+                    <P class="conteudo__descricao">
+                        Por favor, forneça seu nome, endereço de e-mail e número de telefone.
+                    </P>
+                    <label for="nome" class="conteudo__rotulo">Name</label>
+                    <input type="text" name="nome" id="nome" class="conteudo__entrada" required placeholder="e.x.: Pedro Marins" maxlength="30" minlength="7">
+                    <label for="email" class="conteudo__rotulo">Endereço de E-mail</label>
+                    <input type="email" name="email" id="email" class="conteudo__entrada" required placeholder="e.x.: email@dominio.com" pattern="">
+                    <label for="numero" class="conteudo__rotulo">Número de Telefone</label>
+                    <input type="text" name="numero" id="numero" class="conteudo__entrada" maxlength="15" minlength="11" required placeholder="e.x.: (xxx)xxxxx-xxxx" pattern="">
+                </fieldset>
+            </form> -->
 			<form action="#" method="POST" autocomplete="on" id="formulario" class="principal__formulario">
-				<fieldset class="formulario__conteudo">
-					<legend class="conteudo__titulo">Informações pessoais</legend>
-					<P class="conteudo__descricao">
-						Por favor, forneça seu nome, endereço de e-mail e número de telefone.
+                <fieldset class="formulario__conteudo">
+                    <legend class="conteudo__titulo">Selecione o seu plano</legend>
+                    <P class="conteudo__descricao">
+                        Você tem a opção de cobrança mensal ou anual.
 					</P>
-					<label for="nome" class="conteudo__rotulo">Name</label>
+					<label for="nome" class="conteudo__rotulo">Videogrames</label>
 					<input type="text" name="nome" id="nome" class="conteudo__entrada" required placeholder="e.x.: Pedro Marins" maxlength="30" minlength="7">
-					<label for="email" class="conteudo__rotulo">Endereço de E-mail</label>
-					<input type="email" name="email" id="email" class="conteudo__entrada" required placeholder="e.x.: email@dominio.com" >
-					<label for="numero" class="conteudo__rotulo">Número de Telefone</label>
-					<input type="text" name="numero" id="numero" class="conteudo__entrada" maxlength="11" minlength="11" required placeholder="e.x.: (xx)xxxxx-xxxx">
-				</fieldset>
-			</form>
+                    <label for="email" class="conteudo__rotulo">Endereço de E-mail</label>
+                    <input type="email" name="email" id="email" class="conteudo__entrada" required placeholder="e.x.: email@dominio.com" pattern="">
+                    <label for="numero" class="conteudo__rotulo">Número de Telefone</label>
+                    <input type="text" name="numero" id="numero" class="conteudo__entrada" maxlength="15" minlength="11" required placeholder="e.x.: (xxx)xxxxx-xxxx" pattern="">
+                </fieldset>
+            </form>
 		</main>
 		<footer class="rodape">
-			<button type="submit" form="formulario" name="proximo" class="rodape__botao">Próximo Passo</button>
+			<button type="reset" form="formulario" name="voltar" class="rodape__botao-voltar inativo" data-botao="voltar">Voltar</button>
+			<button type="submit" form="formulario" name="proximo" class="rodape__botao-proximo" data-botao="proximo">Próximo Passo</button>
 		</footer>
+		<script type="module" src="./assets/js/main/main.js"></script>
 	</body>
 </html>
 
@@ -82,10 +98,6 @@ Add-ons
 
 Step 4
 Summary
-
-
-Select your plan
-You have the option of monthly or yearly billing.
 
 Arcade
 $9/mo
