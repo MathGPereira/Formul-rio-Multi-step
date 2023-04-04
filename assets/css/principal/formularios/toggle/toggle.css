@@ -1,0 +1,53 @@
+.trocar {
+    position: absolute;
+    margin-left: -9999px;
+    visibility: hidden;
+}
+  
+.trocar + .tipo-tempo__label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+}
+
+.trocar--sombra + .tipo-tempo__label {
+    padding: 2px;
+    width: 55px;
+    height: 31px;
+    background-color: #dddddd;
+    border-radius: 60px;
+}
+
+.trocar--sombra + .tipo-tempo__label:before,
+.trocar--sombra + .tipo-tempo__label:after {
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  content: '';
+}
+
+.trocar--sombra + .tipo-tempo__label:before {
+  right: 1px;
+  background-color: #f1f1f1;
+  border-radius: 60px;
+  transition: all 0.4s;
+}
+
+.trocar--sombra + .tipo-tempo__label:after {
+  width: 30px;
+  background-color: #fff;
+  border-radius: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s;
+}
+
+.trocar--sombra:checked + .tipo-tempo__label:before {
+    background-color: #02295A;
+  }
+  .trocar--sombra:checked + .tipo-tempo__label:after {
+    transform: translateX(28px);
+  }

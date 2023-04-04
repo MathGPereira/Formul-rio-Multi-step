@@ -1,0 +1,49 @@
+@import url("../formularios/toggle/toggle.css");
+
+.conteudo__secao {
+    align-items: center;
+    border: 1px solid #9699AB;
+    border-radius: 8px;
+    box-sizing: border-box;
+    column-gap: 1em;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: repeat(2, auto);
+    margin: 0 0 7px 0;
+    padding: 12px;
+}
+
+.secao__icone {
+    grid-row: 1/3;
+    height: 40px;
+    width: 40px;
+}
+
+.icone__videogame {
+    background-image: url("../../../images/icones/icon-arcade.svg");
+}
+
+.icone__avancado {
+    background-image: url("../../../images/icones/icon-advanced.svg");
+}
+
+.icone__pro {
+    background-image: url("../../../images/icones/icon-pro.svg");
+}
+
+.secao__input {
+    display: none;
+}
+
+.conteudo__rotulo {
+    font-weight: 700;
+}
+
+.secao__descricao {
+    color: var(--cor-fonte-descricao-principal);
+    font-size: 12px;
+}
+
+.conteudo__tipo-tempo {
+    background-color: hsl(217, 100%, 97%);
+}
