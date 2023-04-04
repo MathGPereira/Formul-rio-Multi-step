@@ -9,18 +9,47 @@ export default function constutor() {
 function constroiFormulario(formularioAtivo) {
     if(formularioAtivo === "2") {
         const formulario = `
-            <form action="#" method="POST" autocomplete="on" id="formulario" class="principal__formulario">
+                <form action="#" method="POST" autocomplete="on" id="formulario" class="principal__formulario">
                 <fieldset class="formulario__conteudo">
-                    <legend class="conteudo__titulo">Informações pessoais</legend>
+                    <legend class="conteudo__titulo">Selecione o seu plano</legend>
                     <P class="conteudo__descricao">
-                        Por favor, forneça seu nome, endereço de e-mail e número de telefone.
+                        Você tem a opção de cobrança mensal ou anual.
                     </P>
-                    <label for="nome" class="conteudo__rotulo">Name</label>
-                    <input type="text" name="nome" id="nome" class="conteudo__entrada" required placeholder="e.x.: Pedro Marins" maxlength="30" minlength="7">
-                    <label for="email" class="conteudo__rotulo">Endereço de E-mail</label>
-                    <input type="email" name="email" id="email" class="conteudo__entrada" required placeholder="e.x.: email@dominio.com" pattern="">
-                    <label for="numero" class="conteudo__rotulo">Número de Telefone</label>
-                    <input type="text" name="numero" id="numero" class="conteudo__entrada" maxlength="15" minlength="11" required placeholder="e.x.: (xxx)xxxxx-xxxx" pattern="">
+                    <section class="conteudo__secao conteudo__secao--ativo">
+                        <div class="secao__icone icone__videogame"></div>
+                        <label for="videogame" class="conteudo__rotulo">Videogame</label>
+                        <input type="radio" id="videogame" name="jogos" class="secao__input">
+                        <p class="secao__descricao">
+                            R$<span class="descricao__preco">9</span>/
+                            <span class="descricao__tempo">mês</span>
+                        </p>
+                    </section>
+                    <section class="conteudo__secao">
+                        <div class="secao__icone icone__avancado"></div>
+                        <label for="avancado" class="conteudo__rotulo">Avançado</label>
+                        <input type="radio" id="avancado" name="jogos" class="secao__input">
+                        <p class="secao__descricao">
+                            R$<span class="descricao__preco">12</span>/
+                            <span class="descricao__tempo">mês</span>
+                        </p>
+                    </section>
+                    <section class="conteudo__secao">
+                        <div class="secao__icone icone__pro"></div>
+                        <label for="pro" class="conteudo__rotulo">Pro</label>
+                        <input type="radio" id="pro" name="jogos" class="secao__input">
+                        <p class="secao__descricao">
+                            R$<span class="descricao__preco">15</span>/
+                            <span class="descricao__tempo">mês</span>
+                        </p>
+                    </section>
+                    <div class="conteudo__tipo-tempo">
+                        <label for="tipo-tempo" class="conteudo__rotulo rotulo-mes">Mensalmente</label>
+                        <div class="tipo-tempo__toggle">
+                            <input type="checkbox" id="tipo-tempo" class="trocar trocar--sombra">
+                            <label for="tipo-tempo" class="tipo-tempo__label"></label>
+                        </div>
+                        <label for="tipo-tempo" class="conteudo__rotulo rotulo-ano">Anualmente</label>
+                    </div>
                 </fieldset>
             </form>
         `;

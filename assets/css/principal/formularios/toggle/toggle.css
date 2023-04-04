@@ -45,9 +45,11 @@
   transition: all 0.4s;
 }
 
-.trocar--sombra:checked + .tipo-tempo__label:before {
-    background-color: #02295A;
-  }
-  .trocar--sombra:checked + .tipo-tempo__label:after {
-    transform: translateX(28px);
-  }
+.trocar--sombra:checked + .tipo-tempo__label:before,
+.trocar--sombra + .tipo-tempo__label:before {
+   background-color: #02295A; 
+} 
+
+.trocar--sombra:checked + .tipo-tempo__label:after {
+  transform: translateX(28px);
+}

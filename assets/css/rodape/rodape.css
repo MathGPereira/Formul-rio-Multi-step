@@ -1,9 +1,8 @@
 .rodape {
     background-color: var(--cor-fundo-padrao-rodape);
     box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
     padding: .9em;
+    position: relative;
 }
 
 .rodape__botao-voltar {
@@ -12,6 +11,13 @@
     color: #02295A;
     cursor: pointer;
     font-weight: 400;
+    left: 20px;
+    position: absolute;
+    top: 20px;
+}
+
+.rodape__botao-voltar:hover {
+    color: var(--cor-fonte-descricao-principal);
 }
 
 .inativo {
@@ -25,7 +31,7 @@
     box-sizing: border-box;
     color: #FFFFFF;
     padding: .7em;
-    text-align: right;
+    right: 20px;
     text-decoration: none;
     transition: all .4s linear;
 }
@@ -37,4 +43,8 @@
 
 .rodape__botao-proximo:active {
     background-color: #011e41bd;
+}
+
+.rodape__botao {
+    position: absolute;
 }
