@@ -16,8 +16,7 @@ export default function verificaItemAtivo() {
 function trocaItemAtivo(itemAtivo) {
     const proximoItemAtivo = itemAtivo.nextSibling.nextSibling;
 
-    console.log(proximoItemAtivo);
-
     proximoItemAtivo.classList.add("lista-multipagina__item--ativo");
     itemAtivo.classList.remove("lista-multipagina__item--ativo");
 }
+

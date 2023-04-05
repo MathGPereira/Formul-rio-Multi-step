@@ -1,11 +1,11 @@
 import constutor from "./spa/construtor.js";
 import verificaItemAtivo from "./spa/trocaItem.js";
 
-const botoes = document.querySelectorAll("[data-botao]");
+const formulario = document.querySelector(".principal__formulario");
+const botaoVoltar = document.querySelector("[data-botao='voltar']");
 
-botoes.forEach(botao => {
-    botao.addEventListener("click", () => {
-        verificaItemAtivo();
-        //constutor();
-    });
+formulario.addEventListener("submit", evento => {
+    evento.preventDefault();
+    verificaItemAtivo();
+    constutor();
 });
