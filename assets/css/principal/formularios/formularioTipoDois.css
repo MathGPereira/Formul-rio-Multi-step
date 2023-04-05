@@ -6,11 +6,17 @@
     border-radius: 8px;
     box-sizing: border-box;
     column-gap: 1em;
+    cursor: pointer;
     display: grid;
     grid-template-columns: auto 1fr;
     grid-template-rows: repeat(2, auto);
     margin: 0 0 7px 0;
     padding: 12px;
+    transition: background-color .4s ease-in-out;
+}
+
+.conteudo__secao:hover {
+    background-color: #c3d9fa;
 }
 
 .conteudo__secao--ativo {

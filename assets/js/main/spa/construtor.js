@@ -12,9 +12,9 @@ function constroiFormulario(formularioAtivo) {
             <form action method autocomplete="on" id="formulario" class="principal__formulario">
                 <fieldset class="formulario__conteudo">
                     <legend class="conteudo__titulo">Informações pessoais</legend>
-                    <P class="conteudo__descricao">
+                    <p class="conteudo__descricao">
                         Por favor, forneça seu nome, endereço de e-mail e número de telefone.
-                    </P>
+                    </p>
                     <label for="nome" class="conteudo__rotulo">Name</label>
                     <input type="text" name="nome" id="nome" class="conteudo__entrada" required placeholder="e.x.: Pedro Marins" maxlength="30" minlength="7">
                     <label for="email" class="conteudo__rotulo">Endereço de E-mail</label>
@@ -27,33 +27,30 @@ function constroiFormulario(formularioAtivo) {
     }else if(formularioAtivo === "2") {
         formulario = `
             <form action="#" method="POST" autocomplete="on" id="formulario" class="principal__formulario">
-                <fieldset class="formulario__conteudo">
+                <fieldset class="formulario__conteudo" data-form='formulario'>
                     <legend class="conteudo__titulo">Selecione o seu plano</legend>
-                    <P class="conteudo__descricao">
+                    <p class="conteudo__descricao">
                         Você tem a opção de cobrança mensal ou anual.
-                    </P>
-                    <section class="conteudo__secao conteudo__secao--ativo">
+                    </p>
+                    <section class="conteudo__secao" data-secao='secao'>
                         <div class="secao__icone icone__videogame"></div>
                         <label for="videogame" class="conteudo__rotulo">Videogame</label>
-                        <input type="radio" id="videogame" name="jogos" class="secao__input">
                         <p class="secao__descricao">
                             R$<span class="descricao__preco">9</span>/
                             <span class="descricao__tempo">mês</span>
                         </p>
                     </section>
-                    <section class="conteudo__secao">
+                    <section class="conteudo__secao" data-secao='secao'>
                         <div class="secao__icone icone__avancado"></div>
                         <label for="avancado" class="conteudo__rotulo">Avançado</label>
-                        <input type="radio" id="avancado" name="jogos" class="secao__input">
                         <p class="secao__descricao">
                             R$<span class="descricao__preco">12</span>/
                             <span class="descricao__tempo">mês</span>
                         </p>
                     </section>
-                    <section class="conteudo__secao">
+                    <section class="conteudo__secao" data-secao='secao'>
                         <div class="secao__icone icone__pro"></div>
                         <label for="pro" class="conteudo__rotulo">Pro</label>
-                        <input type="radio" id="pro" name="jogos" class="secao__input">
                         <p class="secao__descricao">
                             R$<span class="descricao__preco">15</span>/
                             <span class="descricao__tempo">mês</span>
