@@ -1,6 +1,9 @@
-import constutor from "./spa/construtor.js";
+import validaBotaoApertado from "./spa/ativaBotaoSecao.js";
 import verificaItemAtivo from "./spa/trocaItem.js";
+import constutor from "./spa/construtor.js";
 
+
+let conteudoSecao;
 const formulario = document.querySelector(".principal__formulario");
 const botaoVoltar = document.querySelector("[data-botao='voltar']");
 
@@ -9,15 +12,11 @@ formulario.addEventListener("submit", evento => {
     verificaItemAtivo(evento, botaoVoltar);
     constutor();
 
-    const conteudoSecao = document.querySelectorAll("[data-secao]");
+    conteudoSecao = document.querySelectorAll("[data-secao]");
 
     conteudoSecao.forEach(secao => {
         secao.addEventListener("click", evento => {
-            if(evento.target.parentNode.dataset.secao === "secao") {
-                evento.target.parentNode.classList.toggle("conteudo__secao--ativo");
-            }else if(evento.target.parentNode.dataset.form === "formulario") {
-                evento.target.classList.toggle("conteudo__secao--ativo");
-            }
+            validaBotaoApertado(evento);
         });
     });
 });

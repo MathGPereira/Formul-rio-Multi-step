@@ -47,16 +47,13 @@
 }
 
 .conteudo__rotulo {
+    cursor: pointer;
     font-weight: 700;
 }
 
 .secao__descricao {
     color: var(--cor-fonte-descricao-principal);
     font-size: 12px;
-}
-
-.conteudo__rotulo {
-    cursor: pointer;
 }
 
 .conteudo__tipo-tempo {
