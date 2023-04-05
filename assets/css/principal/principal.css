@@ -1,5 +1,6 @@
 @import url("./formularios/formularioTipoUm.css");
 @import url("./formularios/formularioTipoDois.css");
+@import url("./formularios/formularioTipoTres.css");
 
 .principal {
     background-color: var(--cor-fundo-padrao-principal);
