@@ -21,6 +21,7 @@
     /* Variáveis do rodapé */
         --cor-fundo-padrao-rodape: #FAFBFF;
     /* Variáveis do rodapé */
+    --cor-texto-inativo: #9699AB;
 }
 
 * {

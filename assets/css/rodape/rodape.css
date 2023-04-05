@@ -8,7 +8,7 @@
 .rodape__botao-voltar {
     background-color: transparent;
     border: none;
-    color: #02295A;
+    color: var(--cor-texto-inativo);
     cursor: pointer;
     font-weight: 400;
     left: 20px;
@@ -17,7 +17,7 @@
 }
 
 .rodape__botao-voltar:hover {
-    color: var(--cor-fonte-descricao-principal);
+    color: var(--cor-fonte-padrao-principal);
 }
 
 .inativo {

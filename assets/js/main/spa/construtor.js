@@ -1,4 +1,4 @@
-export default function constutor() {
+export default function construtor() {
     const formularioAtivo = document.querySelector(".lista-multipagina__item--ativo").innerHTML;
     const conteudoPrincipal = document.querySelector(".principal");
     const formularioConstruido = constroiFormulario(formularioAtivo);
@@ -36,36 +36,40 @@ function constroiFormulario(formularioAtivo) {
                         <div class="secao__icone icone__videogame"></div>
                         <label for="videogame" class="conteudo__rotulo">Videogame</label>
                         <p class="secao__descricao">
-                            R$<span class="descricao__preco">9</span>/
-                            <span class="descricao__tempo">mês</span>
+                            R$<span class="descricao__preco" data-preco='videogame'>9</span>/
+                            <span class="descricao__tempo" data-tempo-secao>mês</span>
                         </p>
                     </section>
                     <section class="conteudo__secao" data-secao='secao'>
                         <div class="secao__icone icone__avancado"></div>
                         <label for="avancado" class="conteudo__rotulo">Avançado</label>
                         <p class="secao__descricao">
-                            R$<span class="descricao__preco">12</span>/
-                            <span class="descricao__tempo">mês</span>
+                            R$<span class="descricao__preco" data-preco='avancado'>12</span>/
+                            <span class="descricao__tempo" data-tempo-secao>mês</span>
                         </p>
                     </section>
                     <section class="conteudo__secao" data-secao='secao'>
                         <div class="secao__icone icone__pro"></div>
                         <label for="pro" class="conteudo__rotulo">Pro</label>
                         <p class="secao__descricao">
-                            R$<span class="descricao__preco">15</span>/
-                            <span class="descricao__tempo">mês</span>
+                            R$<span class="descricao__preco" data-preco='pro'>15</span>/
+                            <span class="descricao__tempo" data-tempo-secao>mês</span>
                         </p>
                     </section>
                     <div class="conteudo__tipo-tempo">
-                        <label for="tipo-tempo" class="conteudo__rotulo rotulo-mes">Mensalmente</label>
-                        <div class="tipo-tempo__toggle">
+                        <label for="tipo-tempo" class="conteudo__rotulo rotulo-mes" data-tempo='mes'>Mensalmente</label>
+                        <div class="tipo-tempo__toggle" inert>
                             <input type="checkbox" id="tipo-tempo" class="trocar trocar--sombra">
                             <label for="tipo-tempo" class="tipo-tempo__label"></label>
                         </div>
-                        <label for="tipo-tempo" class="conteudo__rotulo rotulo-ano">Anualmente</label>
+                        <label for="tipo-tempo" class="conteudo__rotulo rotulo-ano conteudo__rotulo--inativo" data-tempo='ano'>Anualmente</label>
                     </div>
                 </fieldset>
             </form>
+        `;
+    }else if(formularioAtivo === "3") {
+        formulario  `
+        
         `;
     }
 
