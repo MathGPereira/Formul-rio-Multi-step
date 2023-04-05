@@ -1,14 +1,14 @@
 export default function constutor() {
     const formularioAtivo = document.querySelector(".lista-multipagina__item--ativo").innerHTML;
     const conteudoPrincipal = document.querySelector(".principal");
-    const formulario = constroiFormulario(formularioAtivo);
+    const formularioConstruido = constroiFormulario(formularioAtivo);
 
-    conteudoPrincipal.innerHTML = formulario;
+    conteudoPrincipal.innerHTML = formularioConstruido;
 }
 
 function constroiFormulario(formularioAtivo) {
     if(formularioAtivo === "2") {
-        const formulario = `
+        formulario = `
                 <form action="#" method="POST" autocomplete="on" id="formulario" class="principal__formulario">
                 <fieldset class="formulario__conteudo">
                     <legend class="conteudo__titulo">Selecione o seu plano</legend>
@@ -53,7 +53,9 @@ function constroiFormulario(formularioAtivo) {
                 </fieldset>
             </form>
         `;
-        
-        return formulario;
     }
+
+    return formulario;
 }
+
+let formulario;
