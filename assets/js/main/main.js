@@ -6,7 +6,6 @@ import construtor from "./spa/construtor.js";
 
 const formulario = document.querySelector(".principal__formulario");
 const botaoVoltar = document.querySelector("[data-botao='voltar']");
-
 formulario.addEventListener("submit", evento => {
     evento.preventDefault();
     verificaItemAtivo(evento, botaoVoltar);
@@ -29,7 +28,7 @@ formulario.addEventListener("submit", evento => {
             });
         });
     });
-});
+});    
 
 botaoVoltar.addEventListener("click", evento => {
     verificaItemAtivo(evento, botaoVoltar);

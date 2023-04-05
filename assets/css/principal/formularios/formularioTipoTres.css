@@ -1,4 +1,4 @@
-.conteudo__secao {
+.form-tres {
     grid-template-columns: auto 1fr auto;
     grid-template-rows: repeat(2, auto);
 }
