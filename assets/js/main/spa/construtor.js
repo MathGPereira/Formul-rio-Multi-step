@@ -7,9 +7,26 @@ export default function constutor() {
 }
 
 function constroiFormulario(formularioAtivo) {
-    if(formularioAtivo === "2") {
+    if(formularioAtivo === "1") {
         formulario = `
-                <form action="#" method="POST" autocomplete="on" id="formulario" class="principal__formulario">
+            <form action method autocomplete="on" id="formulario" class="principal__formulario">
+                <fieldset class="formulario__conteudo">
+                    <legend class="conteudo__titulo">Informações pessoais</legend>
+                    <P class="conteudo__descricao">
+                        Por favor, forneça seu nome, endereço de e-mail e número de telefone.
+                    </P>
+                    <label for="nome" class="conteudo__rotulo">Name</label>
+                    <input type="text" name="nome" id="nome" class="conteudo__entrada" required placeholder="e.x.: Pedro Marins" maxlength="30" minlength="7">
+                    <label for="email" class="conteudo__rotulo">Endereço de E-mail</label>
+                    <input type="email" name="email" id="email" class="conteudo__entrada" required placeholder="e.x.: email@dominio.com" pattern="[a-z0-9!#$%&*+/=?^_{|}~-]+(?:\.[a-z0-9!#$%&*+/=?^_{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?">
+                    <label for="numero" class="conteudo__rotulo">Número de Telefone</label>
+                    <input type="text" name="numero" id="numero" class="conteudo__entrada" maxlength="15" minlength="15" required placeholder="e.x.: (xxx)xxxxx-xxxx" pattern="\(\d{3}\)\d{5}-\d{4}">
+                </fieldset>
+            </form>
+        `;
+    }else if(formularioAtivo === "2") {
+        formulario = `
+            <form action="#" method="POST" autocomplete="on" id="formulario" class="principal__formulario">
                 <fieldset class="formulario__conteudo">
                     <legend class="conteudo__titulo">Selecione o seu plano</legend>
                     <P class="conteudo__descricao">

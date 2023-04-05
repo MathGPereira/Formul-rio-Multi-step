@@ -6,6 +6,11 @@ const botaoVoltar = document.querySelector("[data-botao='voltar']");
 
 formulario.addEventListener("submit", evento => {
     evento.preventDefault();
-    verificaItemAtivo();
+    verificaItemAtivo(evento, botaoVoltar);
+    constutor();
+});
+
+botaoVoltar.addEventListener("click", evento => {
+    verificaItemAtivo(evento, botaoVoltar);
     constutor();
 });
