@@ -108,6 +108,8 @@ function constroiFormulario(formularioAtivo) {
                 </section>
             </fieldset>
         `;
+    }else {
+        formulario = ``;
     }
 
     return formulario;
