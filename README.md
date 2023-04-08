@@ -16,7 +16,7 @@ Ainda em desenvolvimento, pretende-se melhorar a organização dos códigos Java
 A escolha do uso de JS puro veio como uma ideia de me desafiar a realizar um layout SPA (Single Page Application) pela primeira vez na vida sem o uso de Reacr, Angular ou Vue, por exemplo.
 
 ## Como acessar
-[Vercel](formulario-multi-step-le877p1rz-mathgpereira.vercel.app)
+1. [Vercel](formulario-multi-step-le877p1rz-mathgpereira.vercel.app)
 
 ## Contato
 
