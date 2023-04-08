@@ -15,9 +15,9 @@ export default function verificaItemAtivo(evento, botao) {
 
 function trocaItemAtivo(itemAtivo, botao, evento) {
     if(validaBotaoApertado(evento)) {
-        proximoItemAtivo = itemAtivo.nextSibling.nextSibling;
+        proximoItemAtivo = itemAtivo.parentNode.nextSibling.nextSibling.querySelector(".lista-multipagina__item");
     }else {
-        proximoItemAtivo = itemAtivo.previousSibling.previousSibling;
+        proximoItemAtivo = itemAtivo.parentNode.previousSibling.previousSibling.querySelector(".lista-multipagina__item");
     }
 
     try {
