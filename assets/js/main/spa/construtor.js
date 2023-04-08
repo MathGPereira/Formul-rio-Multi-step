@@ -134,8 +134,22 @@ function constroiFormulario(formularioAtivo) {
                 </section>
             </fieldset>
         `;
-    }else {
-        console.log("oi")
+    }else if(formularioAtivo === "5") {
+        formulario = `
+            <div class="conteudo">
+                <img src="./assets/images/icones/icon-thank-you.svg" alt class="conteudo__imagem">
+                <h1 class="conteudo__titulo">Obrigado!</h1>
+                <p class="conteudo__descricao">
+                    Obrigado por confirmar sua inscrição! Esperamos que você se divirta
+                    usando nossa plataforma. Se você precisar de suporte, por favor, sinta-se livre
+                    envie-nos um e-mail para support@loremgaming.com
+                </p>
+            </div>
+        `;
+
+        const rodape = document.querySelector(".rodape");
+
+        rodape.style.display = "none";
     }
 
     return formulario;

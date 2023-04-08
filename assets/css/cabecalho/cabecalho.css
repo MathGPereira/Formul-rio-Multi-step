@@ -25,3 +25,7 @@
     border: none;
     color: #000000;
 }
+
+.lista-multipagina__item--inativo {
+    display: none;
+}

@@ -20,10 +20,16 @@ function trocaItemAtivo(itemAtivo, botao, evento) {
         proximoItemAtivo = itemAtivo.previousSibling.previousSibling;
     }
 
-    if(proximoItemAtivo !== null) {
-        proximoItemAtivo.classList.add("lista-multipagina__item--ativo");
-        itemAtivo.classList.remove("lista-multipagina__item--ativo");
-        modificaEstadoBotaoVoltar(proximoItemAtivo, botao);
+    try {
+        if(proximoItemAtivo !== null) {
+            proximoItemAtivo.classList.add("lista-multipagina__item--ativo");
+            itemAtivo.classList.remove("lista-multipagina__item--ativo");
+            modificaEstadoBotaoVoltar(proximoItemAtivo, botao);
+        }else {
+            throw new Error("Erro");
+        }
+    } catch(erro) {
+        return erro;
     }
 }
 

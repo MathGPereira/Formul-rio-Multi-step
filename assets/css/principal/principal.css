@@ -41,3 +41,9 @@
     font-weight: var(--fonte-peso-labels-formulario);
     margin-bottom: 5px;
 }
+
+.conteudo {
+    text-align: center;
+    line-height: 1.5em;
+    padding: 1em;
+}
