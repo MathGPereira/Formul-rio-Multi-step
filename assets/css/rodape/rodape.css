@@ -50,5 +50,12 @@
 }
 
 @media screen and (min-width: 1440px) {
-    
+    .rodape {
+        position: absolute;
+        top: 68%;
+        width: 36%;
+        left: 32%;
+        height: 61px;
+        background-color: transparent;
+    }
 }
