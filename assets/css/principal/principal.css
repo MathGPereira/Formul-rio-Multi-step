@@ -50,10 +50,13 @@
 
 @media screen and (min-width: 1440px) {
     .principal {
-        left: 418px;
+        border-radius: 12px;
+        height: 63%;
+        left: 9.5%;
         margin: 0;
         position: absolute;
-        top: 23.5%;
+        top: 14%;
         width: 60%;
+        z-index: 0;
     }
 }

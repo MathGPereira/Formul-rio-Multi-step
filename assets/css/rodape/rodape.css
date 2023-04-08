@@ -48,3 +48,7 @@
 .rodape__botao {
     position: absolute;
 }
+
+@media screen and (min-width: 1440px) {
+    
+}

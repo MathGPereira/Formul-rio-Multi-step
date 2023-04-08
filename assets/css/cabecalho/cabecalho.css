@@ -41,6 +41,7 @@
 @media screen and (min-width: 1440px) {
     .cabecalho {
         position: relative;
+        z-index: 9;
     }
 
     .cabecalho__imagem-desktop {
