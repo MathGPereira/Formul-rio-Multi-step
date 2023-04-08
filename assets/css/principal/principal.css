@@ -50,6 +50,7 @@
 
 @media screen and (min-width: 1440px) {
     .principal {
+        background-color: white;
         border-radius: 12px;
         height: 63%;
         left: 20.5%;
