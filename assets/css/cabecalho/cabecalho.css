@@ -5,6 +5,14 @@
     position: relative;
 }
 
+.cabecalho__imagem-desktop {
+    display: none;
+}
+
+.lista-multipagina__corpo span {
+    display: none;
+}
+
 .cabecalho__lista-multipagina {
     display: flex;
     gap: 20px;
@@ -28,4 +36,40 @@
 
 .lista-multipagina__item--inativo {
     display: none;
+}
+
+@media screen and (min-width: 1440px) {
+    .cabecalho {
+        position: relative;
+    }
+
+    .cabecalho__imagem-desktop {
+        display: block;
+    }
+
+    .cabecalho__imagem-mobile {
+        display: none;
+    }
+
+    .lista-multipagina__corpo {
+        display: grid;
+        column-gap: 15px;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: repeat(2, auto);
+    }
+
+    .cabecalho__lista-multipagina {
+        display: flex;
+        flex-direction: column;
+        left: 12%;
+        position: absolute;
+    }
+
+    .lista-multipagina__item {
+        grid-row: 1/3;
+    }
+
+    .lista-multipagina__corpo span {
+        display: block;
+    }
 }

@@ -34,3 +34,10 @@ body {
     font-weight: var(--fonte-peso-padrao);
     height: 100vh;
 }
+
+@media screen and (min-width: 1440px) {
+    body {
+        background-color: aquamarine;
+        padding: 10%;
+    }
+}
