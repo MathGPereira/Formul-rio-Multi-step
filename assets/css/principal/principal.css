@@ -52,11 +52,21 @@
     .principal {
         border-radius: 12px;
         height: 63%;
-        left: 9.5%;
+        left: 20.5%;
         margin: 0;
         position: absolute;
-        top: 14%;
+        top: 18.5%;
         width: 60%;
         z-index: 0;
+    }
+
+    .principal__formulario {
+        background-color: transparent;
+        box-shadow: none;
+        height: auto;
+        left: 34%;
+        margin: 0;
+        top: 2.5%;
+        width: 63%;
     }
 }

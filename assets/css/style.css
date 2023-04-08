@@ -37,7 +37,8 @@ body {
 
 @media screen and (min-width: 1440px) {
     body {
-        background-color: aquamarine;
-        padding: 10%;
+        background-color: black;
+        padding: 12.8%;
+        padding-left: 21%;
     }
 }
