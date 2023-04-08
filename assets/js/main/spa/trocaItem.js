@@ -20,9 +20,11 @@ function trocaItemAtivo(itemAtivo, botao, evento) {
         proximoItemAtivo = itemAtivo.previousSibling.previousSibling;
     }
 
-    proximoItemAtivo.classList.add("lista-multipagina__item--ativo");
-    itemAtivo.classList.remove("lista-multipagina__item--ativo");
-    modificaEstadoBotaoVoltar(proximoItemAtivo, botao);
+    if(proximoItemAtivo !== null) {
+        proximoItemAtivo.classList.add("lista-multipagina__item--ativo");
+        itemAtivo.classList.remove("lista-multipagina__item--ativo");
+        modificaEstadoBotaoVoltar(proximoItemAtivo, botao);
+    }
 }
 
 function modificaEstadoBotaoVoltar(item, botao) {

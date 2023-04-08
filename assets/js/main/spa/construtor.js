@@ -108,8 +108,34 @@ function constroiFormulario(formularioAtivo) {
                 </section>
             </fieldset>
         `;
+    }else if(formularioAtivo === "4") {
+        formulario = `
+            <fieldset class="formulario__conteudo">
+                <legend class="conteudo__titulo">Terminando</legend>
+                <p class="conteudo__descricao">
+                    Verifique novamente se tudo está OK antes de confirmar.
+                </p>
+                <section class="conteudo__final conteudo__secao">
+                    <div class="final__tipo-jogo">
+                        <label for="videogame" class="conteudo__rotulo">Videogame</label>
+                        <p class="secao__descricao">
+                            R$<span class="descricao__preco" data-preco='videogame'>9</span>/
+                            <span class="descricao__tempo" data-tempo-secao>mês</span>
+                        </p>
+                    </div>
+                    <div class="final__adicionais"></div>
+                </section>
+                <section class="conteudo__tempo">
+                    <p class="conteudo__total">Total (por mês)</p>
+                    <div class="tempo__info secao__preco-tempo">
+                        +R$<span class="conteudo__total-preco">9</span>/
+                        <span class="conteudo__total-tempo">mês</span>
+                    </div>
+                </section>
+            </fieldset>
+        `;
     }else {
-        formulario = ``;
+        console.log("oi")
     }
 
     return formulario;

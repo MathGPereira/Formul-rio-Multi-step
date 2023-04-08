@@ -1,4 +1,4 @@
-export default function trocaPrecoTempo(evento) {
+export function trocaPrecoTempo(evento) {
     let ajuste = 0;
     const dataTempoSecoes = document.querySelectorAll("[data-tempo-secao]");
     const dataPrecoSecoes = document.querySelectorAll("[data-preco]");
@@ -15,5 +15,15 @@ export default function trocaPrecoTempo(evento) {
             dataPrecoSecao.innerHTML = 9 + ajuste;
             ajuste += 3;
         });
+    }
+}
+
+export function retornaValorDoTempo(rotulosDeTempo) {
+    if(rotulosDeTempo) {
+        if(rotulosDeTempo.length !== 0) {
+            const trocar = document.querySelector(".trocar");
+    
+            return trocar.checked;
+        }
     }
 }

@@ -1,0 +1,43 @@
+.conteudo__final {
+    background-color: #ddebf7;
+    border: none;
+    display: block;
+}
+
+.final__tipo-jogo {
+    border-bottom: 1px solid lightslategray;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1em;
+    width: 100%;
+}
+
+.final__adicionais {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1em;
+    width: 100%;
+}
+
+.adicionais__rotulos {
+    color: #9699AB;
+    font-size: 14px;
+}
+
+.conteudo__total {
+    color: #9699AB;
+    font-size: 14px;
+}
+
+.conteudo__tempo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tempo__info {
+    font-size: 14px;
+}
+
+.conteudo__total-preco {
+    color: #473DFF;
+}
